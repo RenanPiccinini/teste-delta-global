@@ -1,6 +1,7 @@
 # Sistema de Gestão de Alunos - CRUD Acadêmico
 
-Este projeto é uma aplicação Fullstack desenvolvida como parte do teste técnico para a **Delta Global**. A solução consiste em um sistema de gerenciamento de alunos com autenticação de usuários, permitindo o controle total (CRUD) dos registros.
+Este projeto é uma aplicação Fullstack desenvolvida como parte do teste técnico para a **Delta Global**. 
+A solução consiste em um sistema de gerenciamento de alunos com autenticação de usuários, permitindo o controle total (CRUD) dos registros.
 
 ## Tecnologias Utilizadas
 
@@ -39,7 +40,7 @@ Este projeto é uma aplicação Fullstack desenvolvida como parte do teste técn
    php spark migrate
 
 ## Relatório de Decisões de Projeto
-Decisões Tomadas
+
 Arquitetura Separada: Conforme descrito no teste separei o frontend do backend. Isso permite escalabilidade e facilita a manutenção independente de cada camada.
 
 Componentização Profissional: Procurei fazer com uma estrutura de pastas organizada (pages, components, services).
@@ -51,6 +52,9 @@ Segurança de Rotas: Implementei um PrivateRoute no React para garantir que o Da
 UX com Pré-visualização: Adicionei lógica de URL.createObjectURL para que o usuário veja a foto do aluno instantaneamente ao selecionar um arquivo ou editar um registro.
 
 ## Possíveis Melhorias
+
+Separar cada tarefa por uma branch diferente no github, acabei fazendo tudo no meu local e subindo tudo junto, porém não é a melhor prática.
+
 JWT (JSON Web Token): Implementar autenticação via Token JWT no backend para uma segurança mais robusta.
 
 Validação de Form Data: Adicionar validações complexas de formulário, exigir senha mais forte por exemplo 8 caracteres sendo no mínimo 1 número, uma maiuscula, uma minuscula e um caracter especial.
