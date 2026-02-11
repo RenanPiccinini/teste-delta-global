@@ -2,7 +2,7 @@
 
 Este projeto é uma aplicação Fullstack desenvolvida como parte do teste técnico para a **Delta Global**. A solução consiste em um sistema de gerenciamento de alunos com autenticação de usuários, permitindo o controle total (CRUD) dos registros.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### Backend
 - **Framework:** CodeIgniter
@@ -18,7 +18,7 @@ Este projeto é uma aplicação Fullstack desenvolvida como parte do teste técn
 
 ---
 
-## 🚀 Instruções de Instalação e Execução
+## Instruções de Instalação e Execução
 
 ### Pré-requisitos
 - Servidor local (XAMPP, WAMP ou Laragon).
@@ -37,3 +37,23 @@ Este projeto é uma aplicação Fullstack desenvolvida como parte do teste técn
 6. Execute as migrations para criar as tabelas:
    ```bash
    php spark migrate
+
+## Relatório de Decisões de Projeto
+Decisões Tomadas
+Arquitetura Separada: Conforme descrito no teste separei o frontend do backend. Isso permite escalabilidade e facilita a manutenção independente de cada camada.
+
+Componentização Profissional: Procurei fazer com uma estrutura de pastas organizada (pages, components, services).
+
+Padrão de Nomenclatura: Utilizei o sufixo Controller (ex: AlunosController.php) para seguir os padrões de mercado e facilitar a legibilidade.
+
+Segurança de Rotas: Implementei um PrivateRoute no React para garantir que o Dashboard só seja acessível após a autenticação via localStorage.
+
+UX com Pré-visualização: Adicionei lógica de URL.createObjectURL para que o usuário veja a foto do aluno instantaneamente ao selecionar um arquivo ou editar um registro.
+
+## Possíveis Melhorias
+JWT (JSON Web Token): Implementar autenticação via Token JWT no backend para uma segurança mais robusta.
+
+Validação de Form Data: Adicionar validações complexas de formulário, exigir senha mais forte por exemplo 8 caracteres sendo no mínimo 1 número, uma maiuscula, uma minuscula e um caracter especial.
+
+
+Testes Automatizados: Implementar testes unitários no PHPUnit (Backend) e Jest/React Testing Library (Frontend).
